@@ -1,5 +1,5 @@
 > ```markdown
-> # Sistema de Vendas - Java Swing & MySQL
+> # Sales System - Java Swing & MySQL
 > ```
 
 > 
@@ -14,50 +14,50 @@
 >
 > -----
 
-> ## Sobre o Projeto
+> ## About the Project
 
-> Este projeto é uma aplicação de desktop para gerenciamento de vendas, desenvolvida em Java com a biblioteca gráfica Swing. O sistema demonstra conceitos fundamentais de desenvolvimento de software, como a criação de interfaces de usuário (UI), a manipulação de eventos e a integração com um banco de dados relacional (MySQL) através de JDBC.
+> This project is a desktop application for sales management, developed in Java with the Swing graphics library. The system demonstrates fundamental software development concepts, such as creating user interfaces (UI), handling events, and integrating with a relational database (MySQL) via JDBC.
 
-> A arquitetura do projeto separa as responsabilidades em pacotes, contendo as classes da interface (view), os objetos de acesso a dados (DAO) e as classes de modelo (beans), facilitando a manutenção e a compreensão do código.
-
-> 
->
-> -----
-
-> ## Principais Funcionalidades
-
->   * Lançamento de Vendas: Interface intuitiva para criar uma nova nota de venda, selecionando um cliente e adicionando múltiplos produtos.
->   * Integração com Banco de Dados: Carregamento dinâmico de clientes e produtos a partir do banco de dados para preenchimento de componentes da UI.
->   * Gerenciamento de Itens: Adição e exclusão de itens do "carrinho" de vendas antes da persistência final.
->   * Lógica de Negócio no Banco (Triggers): O cálculo do valor total da nota é automatizado por meio de triggers no MySQL, garantindo a consistência dos dados diretamente no banco.
+> The project's architecture separates responsibilities into packages, containing the interface classes (view), data access objects (DAO), and model classes (beans), facilitating code maintenance and understanding.
 
 > 
 >
 > -----
 
-> ## Como Executar
+> ## Key Features
 
-> ### 1\. Pré-requisitos
+>   * **Sales Entry:** Intuitive interface to create a new sales note, selecting a customer and adding multiple products.
+>   * **Database Integration:** Dynamic loading of customers and products from the database to populate UI components.
+>   * **Item Management:** Addition and deletion of items from the sales "cart" before final persistence.
+>   * **Database Business Logic (Triggers):** The calculation of the note's total value is automated via triggers in MySQL, ensuring data consistency directly in the database.
 
->   * JDK 8 ou superior
->   * Servidor MySQL (XAMPP, WAMP, etc.)
->   * NetBeans IDE 8.2 ou superior
+> 
+>
+> -----
 
-> ### 2\. Configuração do Banco de Dados
+> ## How to Run
 
->   * Inicie seu servidor MySQL.
->   * Crie um novo banco de dados com o nome `SisVendas`.
->   * Importe o script SQL contido no arquivo `SisVendas.sql` (disponível na raiz deste repositório) para criar as tabelas e os triggers necessários.
+> ### 1\. Prerequisites
 
-> ### 3\. Configuração do Projeto
+>   * JDK 8 or higher
+>   * MySQL Server (XAMPP, WAMP, etc.)
+>   * NetBeans IDE 8.2 or higher
 
->   * Abra o projeto na IDE NetBeans.
->   * Adicione o driver MySQL Connector/J às bibliotecas do projeto.
->   * Verifique e, se necessário, ajuste as credenciais de acesso ao banco de dados na classe de conexão (por padrão, user='root' e password='').
+> ### 2\. Database Setup
 
-> ### 4\. Execução
+>   * Start your MySQL server.
+>   * Create a new database named `SisVendas`.
+>   * Import the SQL script contained in the `SisVendas.sql` file (available in the root of this repository) to create the necessary tables and triggers.
 
->   * Execute o arquivo principal da interface (`CadastroNota.java`) para iniciar a aplicação.
+> ### 3\. Project Setup
+
+>   * Open the project in the NetBeans IDE.
+>   * Add the MySQL Connector/J driver to the project's libraries.
+>   * Check and, if necessary, adjust the database access credentials in the connection class (by default, user='root' and password='').
+
+> ### 4\. Execution
+
+>   * Run the main interface file (`CadastroNota.java`) to start the application.
 
 > 
 >
